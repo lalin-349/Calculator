@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-container {
+    width: 100%;
+    background-color: aqua;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    background-color: green;
+    width: calc(100% - 66.6%);
+    height: 100%;
+    text-align: center;
+  }
+
+ .middle-container {
+    background-color: rgb(244, 255, 27);
+    width: calc(100% - 66.6%);
+    height: 100%;
+
+}
+.last-container {
+    background-color: rgb(21, 0, 246);
+    width: calc(100% - 66.6%);
+    height: 100%;
+}
