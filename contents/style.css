@@ -5,8 +5,8 @@
 }
 
 html, body {
-    overflow: hidden;
-    background-color: rgb(56, 56, 56);
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
     height: auto;
 }
 
@@ -162,3 +162,99 @@ div p {
     margin-top: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+@media screen and (max-width:1170px) {
+    .box-1,.box-2,.box-3,.box-4,.box-5,.box-6 {
+      padding: 49px;
+      margin-top: 0px;
+     }
+
+     .other-functions {
+        margin-top: 50px;
+        height: 300px;
+     }
+     
+}
+@media screen and (max-width:1060px) {
+    .box-1,.box-2,.box-3,.box-4,.box-5,.box-6 {
+      padding: 45px;
+     }
+
+         .other-functions {
+             width: calc(100% - 30%);
+             grid-template-columns: repeat(2, 1fr);
+             /* Creates 4 equal-width columns */
+             margin-left: 85px;
+         }
+         }
+@media screen and (max-width:870px) {
+
+    .main-container {
+        position: relative; /* Needed for absolute positioning to work */
+    /* background-color: green; */
+    }
+    
+    .last-container {
+        position: relative;
+        top: 320px; /* Adjust as needed */
+        right: 660px; /* Moves it outside */
+        height: calc(100% - 90%);
+    }
+    .last-container p{
+        margin-top: -50px;
+        margin-left: 250px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    .other-functions {
+        /* background-color: rgb(255, 195, 195); */
+        width: 100%;
+        height: 200px;
+        display: flex;
+        
+    }
+    
+    .left-container {
+        /* border: 1px solid grey; */
+        width: calc(100% - 50%);
+        min-width:300px;
+        height: 100%;
+        text-align: center;
+        padding-top: 20px;
+        margin-left: 200px;
+      }
+    .middle-container {
+        /* border-left: 2px solid grey;
+        border-right: 2px solid grey; */
+        width: calc(100% - 50%);
+        height: 100%;
+        margin-right: -60px;
+    }
+
+    .numbers-buttons {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr); /* Creates 5 equal-height rows */
+        grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+        gap: 15px; /* Optional: Adds space between the grid items */
+        margin-top: 320px;
+    }
+
+    .num1 , .num2, .num3, .num4 ,.num5,.num6,.num7,.num8,.num9,.num10,.num11,.num12,.num13,.num14,.num15,.num16,.num17,.num18,.num19,.num20{
+        width: 90px;
+        font-size: 1.3em;
+        height: 70px;
+       border-radius: 10px;
+       
+    }
+    
+
+         }
+
+    @media screen and (max-width:817px) {
+        .left-container {
+            margin-left: 100px;
+          }
+            }
