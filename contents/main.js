@@ -42,20 +42,20 @@ function calculateResult() {
         let formattedInput = currentInput.replace(/x/g, "*");
         let result = eval(formattedInput);
 
-        // ✅ Update inputNum with result
+        //  Update inputNum with result
         document.querySelector(".inputNum").innerText = result;
 
-        // ✅ Append result to history-container (persists across sessions)
+        //  Append result to history-container (persists across sessions)
         const historyElement = document.querySelector(".history-container");
         historyElement.value += currentInput + " = " + result + "\n";
 
-        // ✅ Append result to scroll (for dynamic history display)
+        //  Append result to scroll (for dynamic history display)
         const scrollElement = document.querySelector(".scroll");
         const newHistoryItem = document.createElement("h2");
         newHistoryItem.innerText = currentInput + " = " + result;
         scrollElement.appendChild(newHistoryItem);
 
-        // ✅ Auto-scroll to bottom
+        //  Auto-scroll to bottom
         scrollElement.scrollTop = scrollElement.scrollHeight;
 
         currentInput = result.toString();
