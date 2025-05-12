@@ -46,11 +46,12 @@ div p {
     border-radius: 2px;
     color: white;
     border-radius: 20px;
-    padding-bottom: 250px;
+    padding-top: 20px;
     font-family: "Funnel Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  font-size: 1em;
 }
 
 .note-container-box {
