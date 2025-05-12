@@ -1,6 +1,6 @@
 let currentInput = "";
 let resultFrozen = false; // Prevent "=" from executing twice
-const maxLength = 10; // Limit input length
+const maxLength = 20; // Limit input length
 
 
 function addToInput(value) {
@@ -66,7 +66,3 @@ function calculateResult() {
     }
 }
 
-document.querySelectorAll(".numbers-buttons div").forEach(button => {
-    button.addEventListener("click", () => addToInput(button.innerText));
-    button.addEventListener("touchstart", () => addToInput(button.innerText));
-});
