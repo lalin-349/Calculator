@@ -1,11 +1,7 @@
 let currentInput = "";
 let resultFrozen = false; // Prevent "=" from executing twice
-const maxLength = 30; // Limit input length
+const maxLength = 29; // Limit input length
 
-document.querySelectorAll(".numbers-buttons button").forEach(button => {
-    button.addEventListener("click", () => handleButtonClick(button.getAttribute("data-value")));
-    button.addEventListener("touchstart", () => handleButtonClick(button.getAttribute("data-value")));
-});
 
 function handleButtonClick(value) {
     if (value === "AC") {
@@ -81,3 +77,8 @@ function calculateResult() {
         document.querySelector(".inputNum").innerText = "Error";
     }
 }
+
+document.querySelectorAll(".numbers-buttons button").forEach(button => {
+    button.addEventListener("click", () => handleButtonClick(button.getAttribute("data-value")));
+    button.addEventListener("touchstart", () => handleButtonClick(button.getAttribute("data-value"))); // ✅ Added for mobile touch
+});
