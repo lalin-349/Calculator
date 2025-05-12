@@ -66,19 +66,3 @@ function calculateResult() {
     }
 }
 
-document.querySelectorAll(".numbers-buttons button").forEach(button => {
-    button.addEventListener("click", () => handleButtonClick(button.getAttribute("data-value")));
-    button.addEventListener("touchstart", () => handleButtonClick(button.getAttribute("data-value")));
-});
-
-function handleButtonClick(value) {
-    if (value === "AC") {
-        clearInput();
-    } else if (value === "DEL") {
-        deleteLast();
-    } else if (value === "=") {
-        calculateResult();
-    } else {
-        addToInput(value);
-    }
-}
