@@ -1,7 +1,6 @@
 let currentInput = "";
 let resultFrozen = false; // Prevent "=" from executing twice
-const maxLength = 29; // Limit input length
-
+const maxLength = 20; // Limit input length
 
 function addToInput(value) {
     const inputElement = document.querySelector(".inputNum");
@@ -66,4 +65,3 @@ function calculateResult() {
     }
 }
 
-        
