@@ -2,6 +2,7 @@ let currentInput = "";
 let resultFrozen = false; // Prevent "=" from executing twice
 const maxLength = 10; // Limit input length
 
+
 function addToInput(value) {
     const inputElement = document.querySelector(".inputNum");
     const operators = ["+", "-", "*", "/", "%", "x"]; // Allowed operators
@@ -64,3 +65,8 @@ function calculateResult() {
         document.querySelector(".inputNum").innerText = "Error";
     }
 }
+
+document.querySelectorAll(".numbers-buttons div").forEach(button => {
+    button.addEventListener("click", () => addToInput(button.innerText));
+    button.addEventListener("touchstart", () => addToInput(button.innerText));
+});
