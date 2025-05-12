@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Your full JavaScript code here
 let currentInput = "";
 let resultFrozen = false; // Prevent "=" from executing twice
 const maxLength = 20; // Limit input length
@@ -66,3 +68,4 @@ function calculateResult() {
     }
 }
 
+});
