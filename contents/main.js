@@ -66,3 +66,7 @@ function calculateResult() {
     }
 }
 
+document.querySelectorAll(".numbers-buttons button").forEach(button => {
+    button.addEventListener("click", () => handleButtonClick(button.getAttribute("data-value")));
+    button.addEventListener("touchstart", () => handleButtonClick(button.getAttribute("data-value")));
+});
